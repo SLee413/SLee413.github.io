@@ -1,0 +1,82 @@
+/*
+    main.css
+
+    Stylesheet for most parts of the site
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+:root {
+    --primary-color: #57150B;
+    --secondary-color: #FFCC00;
+    --background-color: #f9f9f9;
+    --text-color: #000000;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+a {
+    color: var(--primary-color);
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 10px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+}
+
+header h1 {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav {
+    display: inline;
+}
+
+nav ul {
+    list-style-type: none;
+    display: inline;
+}
+
+nav li {
+    display: inline;
+    padding: 10px 15px;
+    font-size: large;
+}
+
+nav a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    display: inline-block;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+section#hero {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
