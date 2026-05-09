@@ -7,6 +7,10 @@
     <link rel="stylesheet" type="text/css" href="static/main.css"/>
     <link rel="icon" type="image/ico" href="static/favicon.ico"/>
     
+    <script>
+        const user = "school";
+        const domain = "spencers.work";
+    </script>
 </head>
 <body>
     <header>
@@ -21,20 +25,110 @@
     </header>
 
     <section id="hero">
-        <h1>Welcome!</h1>
-        <p>This is my school page!</p>
+        <h1>Hi, I'm Spencer!</h1>
+        <!-- Picture here -->
+        <p>Master and Bachelor of Computer Science</p>
+        <p><i>Class of 2026</i></p>
     </section>
     <section id="about">
-        <h2>About Me</h2>
-        <p>My name is Spencer! I graduated with my bachelor's degree in computer science in Spring 2025, and then my master's degree in Spring 2026!</p>
-        <p>I love coding, learning new technologies, and working on challenging projects! In my freetime I make video games!</p>  
+        <div class="container">
+            <h2>About Me</h2>
+            <p>My name is Spencer! I graduated with my bachelor's degree in computer science in Spring 2025, and then my master's degree in Spring 2026!</p>
+            <p>I love coding, learning new technologies, and working on challenging projects!</p> 
+        </div>
+    </section>
+    <hr>
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project-grid">
+                
+                <div class="project-card">
+                    <img src="/static/AiGENT.png"/>
+                    <h3>AiGENT</h3>
+                    <p>A party game about eliminating the AI built with Firebase and Next.JS</p>
+                    <a href="https://aigent.what.party/">Play now!</a>
+                </div>
+
+                <div class="project-card">
+                    <img src="/static/3drender.png"/>
+                    <h3>3D Renderer</h3>
+                    <p>A custom 3D rendered scene using WebGPU</p>
+                    <a href="https://slee413.github.io/WebGPU-Midterm/">Try it out</a>
+                </div>
+
+                <div class="project-card">
+                    <img src="/static/CircuitDiagram.png"/>
+                    <h3>Embedded Snake Game</h3>
+                    <p>A game of Snake, built on an Arduino using an LED matrix, a joystick, and a speaker</p>
+                    <a href="https://github.com/SLee413/ArduinoSnakeGame">Source code</a>
+                </div>
+
+                <div class="project-card">
+                    <img src="/static/IntoTheSun.png"/>
+                    <h3>Into The Sun</h3>
+                    <p>A roguelite game about a golem who seeks resources in a deadly labyrinth</p>
+                    <a href="https://leespe54.itch.io/intothesun/">Try it on itch.io</a>
+                </div>
+
+                <div class="project-card">
+                    <img src="/static/juliussilvert.png"/>
+                    <h3>Julius Silvert Homepage Redesign</h3>
+                    <p>A redesign of Julius Silvert's homepage built using Next.JS</p>
+                    <a href="https://prototypejuliussilverthomepage.vercel.app/">Check it out</a>
+                </div>
+
+                <div class="project-card">
+                    <img src="/static/fishbook.png"/>
+                    <h3>Fishbook</h3>
+                    <p>A social media site for fishermen! Post your catches and see popular fishing spots</p>
+                    <a href="https://github.com/SLee413/fishbook">Source code</a>
+                </div>
+
+                <div class="project-card">
+                    <img src="/static/forestScene.png"/>
+                    <h3>VR Forest Scene</h3>
+                    <p>An immersive forest scene with photoscanned 3D models, built for VR</p>
+                </div>
+
+                <div class="project-card">
+                    <img src="/static/FallVideo.png"/>
+                    <h3>Fall - Short Film</h3>
+                    <p>A short film about trees animated in Blender</p>
+                    <a href="https://www.youtube.com/watch?v=VdypNbIpYD0">Watch now</a>
+                </div>
+
+                <div class="project-card">
+                    <img src="/static/GetOutOfHereVid.png"/>
+                    <h3>Get Out of Here - Short Film</h3>
+                    <p>A horror short film inspired by The Twilight Zone animated in Blender</p>
+                    <a href="https://www.youtube.com/watch?v=VdypNbIpYD0">Watch now</a>
+                </div>
+            </div>
+        </div>
     </section>
     <hr>
     <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Feel free to connect with me on <a href="https://connect.spencers.work/linkedin">LinkedIn</a>!</p>
-        <br/>
-        <p>If you'd like to get in touch, feel free to reach out via email at <a href="mailto:school@spencers.work">school@spencers.work</a>!</p>
-        <p><i>It can be professional, casual, just asking for my discord, etc. I don't really mind! Please use your <b>rowan.edu</b> domain when emailing!</i></p>
+       <div class="container">
+            <h2>Contact Me</h2>
+            <p>Feel free to connect with me on 
+                <script>
+                    document.write(
+                        `<a href="https://connect.${domain}/linkedin">
+                        LinkedIn
+                        </a>`
+                    );
+                </script>!</p>
+            <br/>
+            <p>If you'd like to get in touch, feel free to reach out via email at 
+                <script>
+                    document.write(
+                        `<a href="mailto:${user}@${domain}">
+                        ${user}@${domain}
+                        </a>`
+                    );
+                </script>!</p>
+            <p><i>It can be professional, casual, just asking for my discord, etc. I don't really mind! Please use your <b>rowan.edu</b> domain when emailing!</i></p>
+       </div>
     </section>
 </body>
